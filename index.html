@@ -1,121 +1,220 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>ZettaByte Plus: Ed Tech Startup</title>
-<style>
-body {
-font-family: sans-serif;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZettaByte Plus - Ed Tech StartUp</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-#header {
-text-align: center;
-}
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+        }
 
-#main {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
-}
+        header {
+            background-color: black;
+            color: #0f0;
+            text-align: center;
+            padding: 100px 0;
+        }
 
-#typing-container {
-width: 500px;
-height: 100px;
-border: 1px solid black;
-}
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
 
-#typing-text {
-font-size: 40px;
-animation: typing 2s infinite;
-}
+        .typewriter {
+            font-size: 20px;
+            color: orange;
+            margin-bottom: 30px;
+            overflow: hidden; /* Hide overflowing text */
+            white-space: nowrap; /* Prevent text from wrapping */
+            border-right: 2px solid transparent; /* Transparent border for the cursor effect */
+            animation: typing 3.5s steps(20, end), blink-caret .75s step-end infinite;
+        }
 
 @keyframes typing {
-from {
-opacity: 0;
-}
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
 
-to {
-opacity: 1;
-}
-}
+        @keyframes blink-caret {
+            from, to {
+                border-color: orange;
+            }
+        }
+        section {
+            padding: 40px;
+            background-color: #fff;
+            border-top: 2px solid #005ea2;
+            border-bottom: 2px solid #005ea2;
+            margin: 40px 0;
+        }
 
-#graphics-container {
-width: 500px;
-height: 100px;
-border: 1px solid black;
-}
+        h2 {
+            font-size: 28px;
+            color: #005ea2;
+            margin-bottom: 20px;
+        }
 
-#info-container {
-width: 500px;
-height: 200px;
-border: 1px solid black;
-}
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
 
-#footer {
-text-align: center;
-}
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 18px;
+        }
 
-</style>
-<script src="script.js"></script>
+        .workshop-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #005ea2;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .contact-info {
+            font-size: 20px;
+        }
+
+        .about-video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .feature {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 24px;
+            color: #005ea2;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
 
-<div id="header">
-<h1>ZettaByte Plus</h1>
-<h2>Ed Tech Startup</h2>
-</div>
+    <header>
+        <h1>Welcome to ZettaByte Plus</h1>
+        <p>Redefining Ed Tech with Hands-On Learning, Gamified Tools, and Expert-Crafted Syllabus</p>
+        <p class="typewriter">Igniting Futures from Alphabets to Innovation with Gamified Learning</p>
+    </header>
 
-<div id="main">
-<div id="typing-container">
-<p id="typing-text">ZettaByte Plus: Ed Tech Startup</p>
-</div>
 
-<div id="graphics-container">
-<img src="graphics.png" alt="ZettaByte Plus Logo">
-</div>
 
-<div id="info-container">
-<h2>What We Do</h2>
-<p>ZettaByte Plus is an Ed tech startup that offers free trainings and internships on various tools and technologies, including:</p>
-<ul>
-<li>Python</li>
-<li>Golang</li>
-<li>JavaScript</li>
-<li>Introduction to Cloud Computing and Cloud Services offered by Various cloud providers ( AWS and Azure)</li>
-<li>Introduction to Microservices: REST, gRPC and GraphQL</li>
-<li>Cryptography and Network Security</li>
-</ul>
+<section>
+        <h2>About Us</h2>
+        <p>ZettaByte Plus is not your typical Ed Tech startup. Unlike other training centers, we believe in a hands-on learning approach. Our content, syllabus, and tools are crafted by experts currently working at top Indian MNCs, developing cutting-edge technologies.</p>
+        <p>This sets us apart, ensuring that our training is always up-to-date, offering the latest, greatest, and the best in the industry. We're committed to empowering your future with practical skills and real-world knowledge.</p>
+        <p>But what truly sets us apart is our unique approach to education. We don't just provide Videos, PPTs, or PDFs like others. We believe that learning should be an engaging, fun, and immersive experience.</p>
+        <p>That's why we have spent over four years researching and building gamified learning tools and technologies. We offer interactive games and activities that allow students to learn subconsciously while having fun. For example, we provide coding challenges where learners build their own games or interactive quizzes that make learning an exciting adventure.</p>
+        <p>Our mission is to ignite futures from Alphabets to Innovation, empowering you with the skills you need for success in the ever-evolving tech world.</p>
+        <section>
+        <p>ZettaByte Plus is an Ed Tech startup that has conducted over 200 workshops and hosted 100+ interns. We offer free training and internships on various tools, including:</p>
 
-<h2>Our Impact</h2>
-<p>ZettaByte Plus has conducted over 200 workshops and trained over 100 interns. Our students have gone on to land jobs at top tech companies like Google, Microsoft, and Amazon.</p>
+        <ul>
+            <li>Python: From basics to advanced data science and machine learning.</li>
+            <li>Golang: Learn the language for building efficient and scalable software.</li>
+            <li>JavaScript: Explore the world of front-end and back-end web development.</li>
+            <li>Introduction to Cloud Computing: Understand cloud services by AWS and Azure.</li>
+            <li>Introduction to Microservices: Learn REST, gRPC, and GraphQL for modern app development.</li>
+            <li>Cryptography and Network Security: Secure your applications and data.</li>
+            <li>Web Development: Create interactive websites using HTML, CSS, and JavaScript.</li>
+            <li>Mobile App Development: Build mobile apps for iOS and Android platforms.</li>
+            <li>GUI Application Development: Develop user-friendly desktop applications.</li>
+            <li>Front-end using ReactJS: Master the popular JavaScript framework.</li>
+            <li>Backend in ExpressJS: Create robust server-side applications.</li>
+        </ul>
+        <p>Our comprehensive training programs empower you with the skills needed for a successful career in tech.</p>            
+        </section>
 
-<h2>How to Get Involved</h2>
-<p>If you're interested in learning more about our trainings and internships, please visit our website or contact us at [email protected]</p>
-</div>
-</div>
+        <!-- <p>Watch our introductory video:</p> -->
+        <!-- <iframe class="about-video" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe> -->
+    </section>
 
-<div id="footer">
-<p>Copyright &copy; 2023 ZettaByte Plus</p>
-</div>
+    <section>
+        <h2>Our Workshops</h2>
+        <p>We provide a wide range of hands-on workshops and training programs designed to equip you with practical skills and knowledge. Our workshops include:</p>
+        <ul>
+            <li><strong>Python Mastery:</strong> A comprehensive program covering Python from fundamentals to advanced topics like data analysis, machine learning, and web development.</li>
+            <li><strong>Full-Stack Web Development:</strong> Learn HTML, CSS, JavaScript, and popular frameworks like React, as well as server-side technologies such as Express.js.</li>
+            <li><strong>Cloud Computing Essentials:</strong> Understand cloud services and architecture with a focus on AWS and Azure.</li>
+            <li><strong>Microservices Revolution:</strong> Explore modern microservices architecture through REST, gRPC, and GraphQL.</li>
+            <li><strong>Cryptocurrency & Cybersecurity:</strong> Delve into the world of cryptography, blockchain technology, and network security.</li>
+            <li><strong>Mobile App Development:</strong> Build mobile apps for Android and iOS platforms using industry-standard tools and practices.</li>
+            <li><strong>User-Centric GUI Design:</strong> Create intuitive and visually appealing graphical user interfaces for software applications.</li>
+        </ul>
+        <p>Our workshops are interactive, with real-world projects and practical exercises, ensuring you gain valuable experience for your future career.</p>
+        <!-- <img class="workshop-image" src="workshop-image.jpg" alt="Workshop Image"> -->
+    </section>
 
-<script>
-var typingText = "ZettaByte Plus: Ed Tech Startup";
-var typingIndex = 0;
+        <section>
+        <h2>Features</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Extensive Workshop Catalog</h3>
+                <p>Choose from a diverse catalog of workshops, each tailored to different skill levels and interests. Whether you're a beginner or an experienced developer, there's a workshop for you.</p>
+            </div>
+            <div class="feature">
+                <h3>Interactive Learning Experience</h3>
+                <p>Our workshops are designed to be engaging and interactive. You'll work on real projects, collaborate with peers, and receive expert guidance to maximize your learning experience.</p>
+            </div>
+            <div class="feature">
+                <h3>Career-Ready Skills</h3>
+                <p>We focus on practical skills that are in high demand in the tech industry. By the end of our programs, you'll have a portfolio of projects to showcase to potential employers.</p>
+            </div>
+            <div class="feature">
+                <h3>Industry-Experienced Instructors</h3>
+                <p>Learn from industry professionals who have extensive experience in their respective fields. Our instructors are dedicated to your success.</p>
+            </div>
+        </div>
+    </section>
 
-function typingAnimation() {
-if (typingIndex < typingText.length) {
-document.getElementById("typing-text").innerHTML += typingText[typingIndex];
-typingIndex++;
-} else {
-document.getElementById("typing-text").innerHTML = "";
-typingIndex = 0;
-}
+    <section>
+        <h2>Contact Us</h2>
+        <p>If you're interested in our services or have any questions, feel free to reach out:</p>
+        <p class="contact-info">Email: zettabytesofttech@gmail.com</p>
+        <!-- <p class="contact-info">Phone: +1 (123) 456-7890</p> -->
+        <!-- Transforming Learning with Gamified Skills for Tomorrow's Innovators -->
+    </section>
 
-setTimeout(typingAnimation, 100);
-}
-
-typingAnimation();
-
-</script>
+    <footer>
+        <p>&copy; 2023 ZettaByte Plus Dr.K.M.Bhavani</p>
+    </footer>
 </body>
 </html>
