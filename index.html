@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ZettaByte Plus: Ed Tech Startup</title>
+<style>
+body {
+font-family: sans-serif;
+}
+
+#header {
+text-align: center;
+}
+
+#main {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+}
+
+#typing-container {
+width: 500px;
+height: 100px;
+border: 1px solid black;
+}
+
+#typing-text {
+font-size: 40px;
+animation: typing 2s infinite;
+}
+
+@keyframes typing {
+from {
+opacity: 0;
+}
+
+to {
+opacity: 1;
+}
+}
+
+#graphics-container {
+width: 500px;
+height: 100px;
+border: 1px solid black;
+}
+
+#info-container {
+width: 500px;
+height: 200px;
+border: 1px solid black;
+}
+
+#footer {
+text-align: center;
+}
+
+</style>
+<script src="script.js"></script>
+</head>
+<body>
+
+<div id="header">
+<h1>ZettaByte Plus</h1>
+<h2>Ed Tech Startup</h2>
+</div>
+
+<div id="main">
+<div id="typing-container">
+<p id="typing-text">ZettaByte Plus: Ed Tech Startup</p>
+</div>
+
+<div id="graphics-container">
+<img src="graphics.png" alt="ZettaByte Plus Logo">
+</div>
+
+<div id="info-container">
+<h2>What We Do</h2>
+<p>ZettaByte Plus is an Ed tech startup that offers free trainings and internships on various tools and technologies, including:</p>
+<ul>
+<li>Python</li>
+<li>Golang</li>
+<li>JavaScript</li>
+<li>Introduction to Cloud Computing and Cloud Services offered by Various cloud providers ( AWS and Azure)</li>
+<li>Introduction to Microservices: REST, gRPC and GraphQL</li>
+<li>Cryptography and Network Security</li>
+</ul>
+
+<h2>Our Impact</h2>
+<p>ZettaByte Plus has conducted over 200 workshops and trained over 100 interns. Our students have gone on to land jobs at top tech companies like Google, Microsoft, and Amazon.</p>
+
+<h2>How to Get Involved</h2>
+<p>If you're interested in learning more about our trainings and internships, please visit our website or contact us at [email protected]</p>
+</div>
+</div>
+
+<div id="footer">
+<p>Copyright &copy; 2023 ZettaByte Plus</p>
+</div>
+
+<script>
+var typingText = "ZettaByte Plus: Ed Tech Startup";
+var typingIndex = 0;
+
+function typingAnimation() {
+if (typingIndex < typingText.length) {
+document.getElementById("typing-text").innerHTML += typingText[typingIndex];
+typingIndex++;
+} else {
+document.getElementById("typing-text").innerHTML = "";
+typingIndex = 0;
+}
+
+setTimeout(typingAnimation, 100);
+}
+
+typingAnimation();
+
+</script>
+</body>
+</html>
